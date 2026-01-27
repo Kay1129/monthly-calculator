@@ -18,7 +18,7 @@ async function seed() {
       regDate: "2026-January"
     },
     {
-      payer: "Alex",
+      payer: "Yining",
       price: mongoose.Types.Decimal128.fromString("320.50"),
       location: "Countdown",
       description: "Groceries for the week",
@@ -32,13 +32,13 @@ async function seed() {
       regDate: "2026-February"
     },
     {
-      payer: "Alex",
+      payer: "Yining",
       price: mongoose.Types.Decimal128.fromString("85.00"),
       location: "Taiping",
       description: "meat",
       regDate: "2026-February"
     },    {
-      payer: "Alex",
+      payer: "Yining",
       price: mongoose.Types.Decimal128.fromString("500.13"),
       location: "Countdown",
       description: "Monthly food",
