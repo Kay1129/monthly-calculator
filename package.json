@@ -1,0 +1,32 @@
+{
+  "name": "monthly-calculator",
+  "version": "1.0.0",
+  "description": "/",
+  "main": "app.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.3",
+    "mongoose": "^8.8.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1",
+    "svgo": "^3.3.2",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "eslint": "^8.57.1"
+  }
+}

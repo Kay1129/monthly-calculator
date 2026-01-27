@@ -1,0 +1,390 @@
+[{
+  "_id": {
+    "$oid": "6799a3ef61c64860fc811be7"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "25.77"
+  },
+  "location": "Taiping",
+  "description": "03/12",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a4d961c64860fc811c01"
+  },
+  "payer": "Kai",
+  "price": {
+    "$numberDecimal": "101.14"
+  },
+  "location": "Paknsave",
+  "description": "24/nov",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a52a61c64860fc811c0f"
+  },
+  "payer": "Fanyi",
+  "price": {
+    "$numberDecimal": "25.51"
+  },
+  "location": "Taiping",
+  "description": "14jan",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a5b561c64860fc811c1d"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "18.26"
+  },
+  "location": "Taiping",
+  "description": "10dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a5e761c64860fc811c2b"
+  },
+  "payer": "Fanyi",
+  "price": {
+    "$numberDecimal": "26.62"
+  },
+  "location": "Taiping",
+  "description": "24 dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a63361c64860fc811c39"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "242.65"
+  },
+  "location": "Smart",
+  "description": "02jan",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a67761c64860fc811c47"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "143.70"
+  },
+  "location": "Taiping",
+  "description": "28 dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a6cd61c64860fc811c55"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "14.28"
+  },
+  "location": "Taiping",
+  "description": "14nov",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a72d61c64860fc811c63"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "110.43"
+  },
+  "location": "Paknsave",
+  "description": "21dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a7e961c64860fc811c71"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "317.00"
+  },
+  "location": "Costco",
+  "description": "15dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a86061c64860fc811c7f"
+  },
+  "payer": "Kai",
+  "price": {
+    "$numberDecimal": "320.00"
+  },
+  "location": "Costco",
+  "description": "08 dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a8a961c64860fc811c9b"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "17.00"
+  },
+  "location": "Taiping",
+  "description": "24dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a8cf61c64860fc811ca9"
+  },
+  "payer": "Kai",
+  "price": {
+    "$numberDecimal": "10.00"
+  },
+  "location": "Taiping",
+  "description": "09jan",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a8ed61c64860fc811cb7"
+  },
+  "payer": "Kai",
+  "price": {
+    "$numberDecimal": "15.00"
+  },
+  "location": "Taiping",
+  "description": "18dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799a96461c64860fc811ce0"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "22.85"
+  },
+  "location": "Countdown",
+  "description": "9jan",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799aa2d61c64860fc811d09"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "54.50"
+  },
+  "location": "Taiping",
+  "description": "19dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799e5ebead808c7310621ad"
+  },
+  "payer": "Fanyi",
+  "price": {
+    "$numberDecimal": "13.00"
+  },
+  "location": "Others",
+  "description": "08dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6799e67fead808c7310621c7"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "70.00"
+  },
+  "location": "Costco",
+  "description": "08dec",
+  "regDate": "2025-January",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b129a39e375a4583f2942a"
+  },
+  "payer": "Kai",
+  "price": {
+    "$numberDecimal": "55.10"
+  },
+  "location": "Taiping",
+  "description": "beef, veg",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b129c59e375a4583f29438"
+  },
+  "payer": "Kai",
+  "price": {
+    "$numberDecimal": "30.00"
+  },
+  "location": "Sales Warehouse",
+  "description": "rice, soft drink",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f61e9e375a4583f2945e"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "13.12"
+  },
+  "location": "Taiping",
+  "description": "Fish",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f6679e375a4583f2946c"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "58.83"
+  },
+  "location": "Others",
+  "description": "Cai lin nan",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f7139e375a4583f2947a"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "170.00"
+  },
+  "location": "Costco",
+  "description": "Cost co",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f74c9e375a4583f29488"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "162.00"
+  },
+  "location": "Paknsave",
+  "description": "",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f7719e375a4583f29496"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "136.64"
+  },
+  "location": "Paknsave",
+  "description": "",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f7b19e375a4583f294a4"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "64.37"
+  },
+  "location": "Taiping",
+  "description": "",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f82e9e375a4583f294c6"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "143.70"
+  },
+  "location": "Taiping",
+  "description": "28dec",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f84d9e375a4583f294d4"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "45.37"
+  },
+  "location": "Taiping",
+  "description": "25jan",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f8689e375a4583f294e2"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "37.10"
+  },
+  "location": "Taiping",
+  "description": "25 jan",
+  "regDate": "2025-February",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67b2f88a9e375a4583f294f0"
+  },
+  "payer": "Yining & Tang",
+  "price": {
+    "$numberDecimal": "108.41"
+  },
+  "location": "Taiping",
+  "description": "17 jan",
+  "regDate": "2025-February",
+  "__v": 0
+}]
