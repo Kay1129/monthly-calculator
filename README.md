@@ -134,7 +134,7 @@ This project **does not commit real user data**.
 For local development and demonstration purposes, a seed script is provided to populate the database with **sample expense records**.
 
 ```bash
-node backend/seed/seed.js
+node seed/seed.js
 ```
 
 The seed data simulates realistic scenarios:
