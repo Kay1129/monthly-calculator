@@ -43,6 +43,33 @@ By assigning a **main controller (bill manager)**, participants can clearly see:
 
 ---
 
+## 📈 Install prerequirements
+
+1️⃣ Install MongoDB from the official website
+- ```mongod --version ```
+- Start the MongoDB Service
+
+2️⃣ Install Tailwind & Tremor & React-dom & nodemon & React-script
+- ```npm install -D tailwindcss@3.4.17 postcss autoprefixer```
+- ```npm install react-router-dom @tremor/react @headlessui/react @headlessui/tailwindcss web-vitals```
+- ```npm install -D @tailwindcss/forms```
+- ```npm install -D nodemon```
+- ```npm install react-scripts```
+
+3️⃣ Run Seed to load the fake data
+- ```node seed/seed.js```
+
+4️⃣ Locate to the files in frontend/src/pages and replace the ipv4 address of **const fetchData1** to your local pc IP address.
+- For example, if your ip address is 192.168.11.12, then replace to your local server address: 'http://192.168.11.12:3000/api/expense/annualSummary/'+ dbDate
+- The purpose is for multiple users who can upload receipts or check expenses' details at the same time if they are using the same WiFi.
+---
+
+## 🔍 Run the exe
+- ```npm install```
+- ```npm start```
+---
+
+
 ## 📊 Data Analysis & Insights (Planned / In Progress)
 
 Beyond basic monthly tracking, the application is designed to support **long-term expense analysis**, including:
