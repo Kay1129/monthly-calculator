@@ -79,7 +79,8 @@ import {
         // 定义一个异步函数以发送 GET 请求
         const fetchData1 = async () => {
             try {
-            const response = await fetch('http://192.168.50.56:3000/api/expense/annualSummary/'+ dbDate); // 替换为你的 API 地址
+            // 使用当前主机的后端地址，避免在不同电脑上硬编码 IP 导致请求失败
+            const response = await fetch('http://localhost:3000/api/expense/annualSummary/' + dbDate);
             if (!response.ok) {
                 //防错机制，并且获取到api传来的默认json数据
                 const defaultData = await response.json();

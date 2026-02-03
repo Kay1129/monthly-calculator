@@ -15,3 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* 强制统一 tremor 图表右上角 legend 圆点大小，避免在不同设备上被其它样式放大 */
+li[class*="tremor-Legend"] svg {
+  width: 8px !important;
+  height: 8px !important;
+  min-width: 8px !important;
+  min-height: 8px !important;
+}

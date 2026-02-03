@@ -46,7 +46,7 @@ export default function Example() {
         // 定义一个异步函数以发送 GET 请求
         const fetchData1 = async () => {
             try {
-            const response = await fetch('http://192.168.50.56:3000/api/expense/monthSummary/'+ dbDate); // 替换为你的 API 地址
+            const response = await fetch('http://localhost:3000/api/expense/monthSummary/'+ dbDate); // 替换为你的 API 地址
             if (!response.ok) {
                 //防错机制，并且获取到api传来的默认json数据
                 const defaultData = await response.json();

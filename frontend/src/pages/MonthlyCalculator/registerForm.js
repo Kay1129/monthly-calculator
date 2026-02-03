@@ -10,7 +10,7 @@ export default function Example() {
         payer: '',
         location: '',
         price: '',
-        year: '2025',
+        year: '2026',
         month: '',
         description: ''
       });
@@ -24,7 +24,7 @@ export default function Example() {
             // 定义一个异步函数以发送 GET 请求
             const fetchData1 = async () => {
                 try {
-                const response = await fetch('http://192.168.50.56:3000/api/familyMember'); // 替换为你的 API 地址
+                const response = await fetch('http://localhost:3000/api/familyMember'); // 替换为你的 API 地址
 
                 //如果可以正常获取到值，则将result保存在前端 data array当中
                 const result = await response.json();
@@ -221,7 +221,7 @@ export default function Example() {
                                             required
                                             className="border-0 overflow-y-scroll col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                                         >
-                                            <option>2025</option>
+                                            <option>2026</option>
                                         </select>
                                     </div>
                                     
