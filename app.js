@@ -52,5 +52,5 @@ db.on('error', (err) => {
 // 启动 Express 服务
 const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://192.168.50.56:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });

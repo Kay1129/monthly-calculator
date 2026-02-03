@@ -1,156 +1,198 @@
- *“This project is currently under active development.”*
- 
-# Monthly Expense Calculator (MERN)
+# Monthly Expense Calculator
 
-A full-stack web application designed to help roommates or friends **track, split, and analyze shared monthly expenses** in a clear and transparent way.
-
-This project focuses on **real-world problem solving**, clean data modeling, and practical full-stack development using the MERN stack.
+A full-stack web application that helps roommates or friends **track, split, and analyze shared monthly expenses** in a transparent way. Built with the MERN stack, it demonstrates real-world problem solving, clean data modeling, and end-to-end full-stack development.
 
 ---
 
+## What This App Does
 
-## 🎯 Project Motivation
+The Monthly Expense Calculator lets users record household expenses and automatically computes how much each person has paid, how much they owe, and how spending compares over time.
 
-This project was built to:
+### Core Features
 
-- Address a real shared-living financial problem
-- Practice end-to-end MERN development
-- Focus on data accuracy and business logic
-- Demonstrate the ability to design, implement, and document a complete full-stack application
+- **Dashboard** – View total monthly spend, average per person, comparison with last month, and recent activity  
+- **Expense registration** – Record expenses with amount, payer, location (e.g. supermarket), description, and billing month  
+- **Expense detail** – Browse all monthly expenses and filter by payer  
+- **Annual summary** – Yearly overview with charts (BarChart, LineChart, DonutChart) and metrics such as:
+  - Total annual costs  
+  - Highest / lowest spending month  
+  - Spending breakdown by store  
+  - Average cost per person  
 
----
+### Business Logic
 
-## ✨ Project Overview
-
-The application allows users to record **individual expenses for a specific month**, including:
-
-- 💰 Expense amount  
-- 📍 Location / merchant  
-- 📝 Description (optional)  
-- 📅 Billing month (e.g. `2026-January`)  
-
-Based on the recorded data, the app automatically calculates and updates:
-
-- Total expenses for the current month  
-- Each participant’s total spending  
-- Average monthly spending per person  
-- Comparisons with the previous month  
-
-By assigning a **main controller (bill manager)**, participants can clearly see:
-
-- Whether they have overpaid or underpaid
-- How much they need to settle at the end of the month
+- Automatically calculates **per-person averages** and **amounts to settle**  
+- Supports a designated **bill manager** so participants see who overpaid or underpaid  
+- Designed for **multi-user access** on the same network (e.g. shared Wi‑Fi) so multiple users can log and view expenses
 
 ---
 
-## 📈 Install prerequirements
+## Tech Stack
 
-1️⃣ Install MongoDB from the official website
-- ```mongod --version ```
-- Start the MongoDB Service
-
-2️⃣ Install Tailwind & Tremor & React-dom & nodemon & React-script
-- ```npm install -D tailwindcss@3.4.17 postcss autoprefixer```
-- ```npm install react-router-dom @tremor/react @headlessui/react @headlessui/tailwindcss web-vitals```
-- ```npm install -D @tailwindcss/forms```
-- ```npm install -D nodemon```
-- ```npm install react-scripts```
-
-3️⃣ Run Seed to load the fake data
-- ```node seed/seed.js```
-
-4️⃣ Locate to the files in frontend/src/pages and replace the ipv4 address of **const fetchData1** to your local pc IP address.
-- For example, if your ip address is 192.168.11.12, then replace to your local server address: 'http://192.168.11.12:3000/api/expense/annualSummary/'+ dbDate
-- The purpose is for multiple users who can upload receipts or check expenses' details at the same time if they are using the same WiFi.
----
-
-## 🔍 Run the exe
-- ```npm install```
-- ```npm start```
----
-
-
-## 📊 Data Analysis & Insights (Planned / In Progress)
-
-Beyond basic monthly tracking, the application is designed to support **long-term expense analysis**, including:
-
-- 📆 Annual expense summaries
-- 📈 Monthly spending trends
-- 🏪 Yearly spending breakdown by location (e.g. supermarkets)
-- 🔍 Identification of:
-  - Highest spending month
-  - Lowest spending month
-
-All insights are intended to be displayed using **visual charts and summaries** for better readability.
+| Layer | Technologies |
+|-------|--------------|
+| **Frontend** | React 18, React Router, Tailwind CSS, Tremor (charts), Radix UI, Headless UI |
+| **Backend** | Node.js, Express, RESTful API |
+| **Database** | MongoDB, Mongoose |
+| **Testing** | Jest, Supertest (backend), React Testing Library (frontend) |
 
 ---
 
-## 🧱 Tech Stack
+## Testing & Quality Assurance
 
-### Frontend
-- **React**
-- JavaScript (ES6+)
-- Component-based architecture
-- Fetch / Axios for API communication
+The project includes **full test coverage for both backend and frontend**, created with AI assistance. Test strategy, cases, and conclusions are documented in the **testing report** folder for deeper review.
 
-### Backend
-- **Node.js**
-- **Express**
-- RESTful API design
+### Backend Tests
 
-### Database
-- **MongoDB**
-- **Mongoose**
+- **Location**: `routers/__tests__/`
+- **Framework**: Jest + Supertest
+- **Coverage**: 6 API routes, 17 test cases
+- **Run**: `npm test` (from project root)
 
-### Tooling & Practices
-- Git & GitHub
-- Environment variables for sensitive configuration
-- Seed scripts for development and demo data
-- Clear separation of frontend and backend concerns
+### Frontend Tests
 
----
+- **Location**: `frontend/src/pages/MonthlyCalculator/__tests__/`
+- **Framework**: Jest + React Testing Library
+- **Coverage**: 4 main components, 15 test cases
+- **Run**: `cd frontend && npm test -- --watchAll=false`
 
+### Test Documentation
 
-## 🧩 Database Design
+Detailed documentation is in the `docs/` folder:
 
-### Expense Schema (Simplified)
+| Document | Description |
+|----------|-------------|
+| [`testingReport/BACKEND.md`](testingReport/BACKEND.md) | Backend test cases, rationale, and conclusions |
+| [`testingReport/FRONTEND.md`](testingReport/FRONTEND.md) | Frontend test cases, rationale, and conclusions |
 
-Each expense record contains:
+Both documents include:
 
-- `payer` – who paid for the expense  
-- `price` – expense amount (`Decimal128`)  
-- `location` – where the expense occurred  
-- `description` – optional notes  
-- `regDate` – billing month (`YYYY-MM`)  
-
-The schema is designed to support **monthly aggregation, comparison, and settlement logic**.
+- How to run tests  
+- Test case tables with scenarios and expected results  
+- Test conclusions and pass criteria  
 
 ---
 
-## 🌱 Seed Data (Development Only)
+## How to Run This Project (For Interviewers/Public Users)
 
-This project **does not commit real user data**.
+### Prerequisites
 
-For local development and demonstration purposes, a seed script is provided to populate the database with **sample expense records**.
+- **Node.js** (v16 or higher recommended)
+- **MongoDB** running locally (default: `mongodb://127.0.0.1:27017`)
+
+### Step 1: Clone the Repository
+
+```bash
+git clone <repository-url>
+cd monthly-calculator
+```
+
+### Step 2: Install Dependencies
+
+Install MongoDB from the official website
+
+
+Install **root** (backend) dependencies:
+
+```bash
+npm install
+```
+
+Populate the database with sample expense records:
 
 ```bash
 node seed/seed.js
 ```
 
-The seed data simulates realistic scenarios:
+### Step 4: Start the Application
 
-- Multiple payers
-- Different spending locations
-- Typical shared living expenses (rent, groceries, utilities, etc.)
-  
+From the **project root**:
+
+```bash
+npm start
+```
+
+This runs:
+
+- **Backend** (Express) on `http://localhost:3000`  
+- **Frontend** (React) on `http://localhost:3001`  
+
+Open `http://localhost:3001` in your browser to use the app.
+
+### Step 5: Run Tests
+
+**Backend tests** (from project root):
+
+```bash
+npm test
+```
+
+**Frontend tests** (from project root or `frontend/`):
+
+```bash
+cd frontend
+npm test -- --watchAll=false
+```
+
 ---
 
-## 🚀 Future Improvements
+## Project Structure
 
-- User authentication and authorization
-- Support for multiple households or groups
-- Expense categories and custom tags
-- More advanced analytics and visualizations
-- Deployment to a cloud platform (e.g. Render, Railway, Fly.io)
-  
+```
+monthly-calculator/
+├── app.js                 # Express entry point
+├── models/                # Mongoose models (Expense, FamilyMember, etc.)
+├── routers/               # API routes
+│   └── __tests__/         # Backend Jest tests
+├── seed/                  # Seed script for sample data
+├── frontend/              # React app
+│   ├── src/
+│   │   ├── pages/         # Page components
+│   │   │   ├── homepage.js
+│   │   │   └── MonthlyCalculator/
+│   │   │       ├── dashboard.js
+│   │   │       ├── registerForm.js
+│   │   │       ├── expenseDetail.js
+│   │   │       ├── annualSummary.js
+│   │   │       └── __tests__/   # Frontend Jest tests
+│   │   └── ...
+│   └── __mocks__/         # Test mocks (e.g. react-router-dom)
+└── docs/                  # Test documentation
+    ├── TEST_DOCUMENTATION.md
+    └── FRONTEND_TEST_DOCUMENTATION.md
+```
+
+---
+
+## API Overview
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/expense/annualSummary/:year` | Annual expense summary |
+| GET | `/api/expense/monthSummary/:regDate` | Monthly dashboard data |
+| GET | `/api/expense/:regDate` | Monthly expense list |
+| GET | `/api/expense/:regDate/:payer` | Personal expense list |
+| GET | `/api/familyMember` | Family member list |
+| POST | `/api/expense` | Create new expense |
+
+---
+
+## Database Schema (Expense)
+
+- `payer` – Who paid  
+- `price` – Amount (Decimal128)  
+- `location` – Store / merchant  
+- `description` – Optional notes  
+- `regDate` – Billing month (e.g. `2026-January`)  
+
+---
+
+## Future Improvements
+
+- User authentication and authorization  
+- Multiple households or groups  
+- Expense categories and custom tags  
+- Richer analytics and visualizations  
+- Deployment (e.g. Render, Railway, Fly.io)  
+
 ---

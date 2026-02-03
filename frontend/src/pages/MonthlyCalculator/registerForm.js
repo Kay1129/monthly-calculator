@@ -71,7 +71,7 @@ export default function Example() {
     
         //发送post请求
         try {
-          const response = await fetch('http://192.168.50.56:3000/api/expense', {
+          const response = await fetch('http://localhost:3000/api/expense', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
